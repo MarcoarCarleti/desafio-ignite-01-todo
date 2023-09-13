@@ -1,0 +1,51 @@
+.newTask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+textarea {
+  width: 50%;
+  resize: none;
+  background-color: var(--gray-500);
+  color: var(--gray-300);
+  border: 1px solid var(--gray-700);
+  outline: 0;
+  border-radius: 10px;
+  padding: 0.725rem;
+  height: 3rem;
+  line-height: 1.4;
+}
+
+textarea:focus {
+  color: var(--gray-100);
+  border: 1px solid var(--purple-dark);
+}
+
+button[type="submit"] {
+  width: 5rem;
+  height: 3rem;
+  color: var(--gray-100);
+  background: var(--blue-dark);
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:disabled {
+  cursor: not-allowed;
+  background-color: var(--blue);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--blue);
+}

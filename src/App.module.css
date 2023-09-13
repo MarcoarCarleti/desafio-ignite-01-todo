@@ -1,0 +1,25 @@
+.wrapper {
+  background: var(--gray-700);
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper > .todoLogo {
+  margin: 0.75rem 0.75rem 0 0;
+  width: 2.25rem;
+}
+
+.to {
+  color: var(--blue);
+}
+
+.do {
+  color: var(--purple-dark);
+}
+
+.to,
+.do {
+  font-size: 2.5rem;
+}
