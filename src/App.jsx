@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import { v4 as uuidv4 } from "uuid";
 
+import rocketLogo from "/src/assets/rocket.svg";
+
 import { AddTasks } from "./components/AddTask";
 import { Task } from "./components/Task";
 
@@ -39,11 +41,7 @@ function App() {
   return (
     <>
       <nav className={styles.wrapper}>
-        <img
-          className={styles.todoLogo}
-          src="src\assets\rocket.svg"
-          alt="todologo"
-        />
+        <img className={styles.todoLogo} src={rocketLogo} alt="todologo" />
         <h1>
           <span className={styles.to}>to</span>
           <span className={styles.do}>do</span>
